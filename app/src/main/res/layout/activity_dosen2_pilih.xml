@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dosen2PilihActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar18"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="     SI - KRS HAI [NAMA DOSEN]" />
+
+    <Button
+        android:id="@+id/btnLogOutDosen"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:background="#F44336"
+        android:text="OUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnDataDiriDosen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/biodata"
+        android:onClick="DataDiriDosen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar18"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <ImageButton
+        android:id="@+id/btnDftMhsDosen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:onClick="DaftarMhsDosen"
+        android:src="@drawable/mahasiswa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnKelolaKrsDosen"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="83dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="60dp"
+        android:text="Daftar Mhs"
+        app:layout_constraintStart_toEndOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/btnDftMhsDosen" />
+
+    <ImageButton
+        android:id="@+id/btnKelolaKrsDosen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:onClick="EditKrsDosen"
+        android:src="@drawable/kelola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:text="Kelola KRS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKelolaKrsDosen" />
+
+    <ImageButton
+        android:id="@+id/btnDftMatkulDosen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="DaftarMatkulDosen"
+        android:src="@drawable/matkul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar18"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="Daftar Matkul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDftMatkulDosen" />
+
+    <ImageButton
+        android:id="@+id/btnDftDosen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:onClick="DaftarDosenDosen"
+        android:src="@drawable/dosen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar18"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Dosen"
+        app:layout_constraintEnd_toStartOf="@+id/textView37"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDftDosen" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="Data Diri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDataDiriDosen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

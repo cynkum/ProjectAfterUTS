@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPilihActivity">
+
+    <ImageButton
+        android:id="@+id/imgBtnDftMatkulAdmin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/matkul"
+        android:onClick="DaftarMatkul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDataDiriAdmin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="144dp"
+        android:src="@drawable/biodata"
+        android:onClick="DataDiri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnDftMatkulAdmin"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Daftar Dosen"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDftDosAdmin" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Data Diri"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDataDiriAdmin" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDftMhsAdmin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/mahasiswa"
+        android:onClick="DaftarMhs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="92dp"
+        android:text="Daftar MHS"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDftMhsAdmin" />
+
+    <ImageButton
+        android:id="@+id/imgKelolaKrsAdmin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/kelola"
+        android:onClick="EditKrs"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnDftMhsAdmin"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kelola KRS"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgKelolaKrsAdmin" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:text="Daftar Matkul"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDftMatkulAdmin" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDftDosAdmin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="144dp"
+        android:src="@drawable/dosen"
+        android:onClick="DaftarDosen"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnDftMatkulAdmin"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnDataDiriAdmin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="     SI KRS - HAI [NAMA ADMIN]" />
+
+    <Button
+        android:id="@+id/btnLogOutAdmin"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:background="#F44336"
+        android:text="OUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
